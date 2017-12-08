@@ -6,7 +6,7 @@ RSpec.describe DayFour::ProblemTwo do
     subject { described_class.new(@input).resolve }
 
 
-    it "returns the number of valid rows that contain no two words that are anagrams" do
+    it 'returns the number of valid rows that contain no two words that are anagrams' do
       @input = <<-HEREDOC
       abcde fghij
       abcde xyz ecdab

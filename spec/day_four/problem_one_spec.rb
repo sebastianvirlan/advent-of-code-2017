@@ -6,7 +6,7 @@ RSpec.describe DayFour::ProblemOne do
     subject { described_class.new(@input).resolve }
 
 
-    it "returns the number of valid unique rows" do
+    it 'returns the number of valid unique rows' do
       @input = <<-HEREDOC
       aa bb cc dd ee
       aa bb cc dd aa
