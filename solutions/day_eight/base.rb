@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module DayEight
   class Base
-
     def initialize(input)
       @input = input.split(/\n+/).map { |row| row.gsub('inc', '+=').gsub('dec', '-=') }
     end
@@ -16,7 +17,7 @@ module DayEight
     end
 
     def variables_declaration
-      input_variables.map { |var| "#{var} = 0"}.join(';')
+      input_variables.map { |var| "#{var} = 0" }.join(';')
     end
 
     def variables_arr

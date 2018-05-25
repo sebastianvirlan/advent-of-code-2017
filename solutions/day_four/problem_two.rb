@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A valid passphrase must contain no two words that are anagrams of each other - that is,
 # a passphrase is invalid if any word's letters can be rearranged to form any other word in the passphrase.
 

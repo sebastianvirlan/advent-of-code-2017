@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module DaySeven
   class Base
     def input_map

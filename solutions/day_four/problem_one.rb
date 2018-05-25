@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # A valid passphrase must contain no duplicate words.
 
 # For example:

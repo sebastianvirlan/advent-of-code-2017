@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Find the size of the loop: starting from a state that has already been seen, how many block redistribution cycles
 # must be performed before that same state is seen again?
 # Return the number of cycles in the infinite loop
@@ -16,4 +18,3 @@ module DaySix
     end
   end
 end
-

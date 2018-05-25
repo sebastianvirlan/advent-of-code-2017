@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Program
   attr_reader :name, :weight, :children
 
@@ -42,7 +44,9 @@ class Program
   end
 
   def children_correct_balance
-    @correct_balance ||= children.detect { |child| children_count_by_total_weight(child.total_weight) > 1 }.total_weight
+    @children_correct_balance ||= children.detect do |child|
+      children_count_by_total_weight(child.total_weight) > 1
+    end.total_weight
   end
 
   def self.recursive_weight(program, weight = 0)

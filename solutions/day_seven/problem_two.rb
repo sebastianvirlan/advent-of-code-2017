@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Being the following list
 #
 # pbga (66)
@@ -38,7 +40,8 @@
 # they're stuck here.
 
 # For any program holding a disc, each program standing on that disc forms a sub-tower. Each of those sub-towers are
-# supposed to be the same weight, or the disc itself isn't balanced. The weight of a tower is the sum of the weights of the programs in that tower.
+# supposed to be the same weight, or the disc itself isn't balanced. The weight of a tower is the sum of the weights of
+# the programs in that tower.
 
 # In the example above, this means that for ugml's disc to be balanced, gyxo, ebii, and jptl must all have the same
 # weight, and they do: 61.

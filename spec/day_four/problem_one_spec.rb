@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require 'rspec'
 require_relative '../../solutions/day_four/problem_one.rb'
 
 RSpec.describe DayFour::ProblemOne do
   describe '#resolve' do
     subject { described_class.new(@input).resolve }
-
 
     it 'returns the number of valid unique rows' do
       @input = <<-HEREDOC

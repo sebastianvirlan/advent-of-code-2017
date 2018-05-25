@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Consider a list of the offsets for each jump. Jumps are relative: -1 moves to the previous instruction, and 2 skips
 # the next one. Start at the first instruction in the list. The goal is to follow the jumps until one leads outside
 # the list.
@@ -10,26 +12,25 @@
 # Return the number of steps
 
 module DayFive
-    class ProblemTwo
-      def initialize(input)
-        @jump_offsets = input.split(/\n+/).map(&:to_i)
-        @steps = 0
+  class ProblemTwo
+    def initialize(input)
+      @jump_offsets = input.split(/\n+/).map(&:to_i)
+      @steps = 0
+    end
+
+    def resolve
+      index = 0
+      until @jump_offsets[index].nil?
+        current_index = index
+        index += @jump_offsets[index]
+        @jump_offsets[current_index] = incr_or_decr_offset(current_index)
+        @steps += 1
       end
-  
-      def resolve
-        index = 0
-        until @jump_offsets[index].nil?
-          current_index = index
-          index += @jump_offsets[index]
-          @jump_offsets[current_index] = incr_or_decr_offset(current_index)
-          @steps += 1
-        end
-        @steps
-      end
-  
-      def incr_or_decr_offset(current_index)
-        @jump_offsets[current_index].send(@jump_offsets[current_index] >= 3 ? 'pred' : 'next')
-      end
+      @steps
+    end
+
+    def incr_or_decr_offset(current_index)
+      @jump_offsets[current_index].send(@jump_offsets[current_index] >= 3 ? 'pred' : 'next')
     end
   end
-  
+end

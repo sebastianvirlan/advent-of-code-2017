@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Being the following list
 #
 # pbga (66)

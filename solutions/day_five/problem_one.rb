@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Consider a list of the offsets for each jump. Jumps are relative: -1 moves to the previous instruction, and 2 skips
 # the next one. Start at the first instruction in the list. The goal is to follow the jumps until one leads outside
 # the list.

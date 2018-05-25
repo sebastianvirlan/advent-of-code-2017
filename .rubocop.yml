@@ -1,0 +1,10 @@
+# Default parentheses
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: space
+
+# Line length
+Metrics/LineLength:
+  Max: 120
+
+Documentation:
+  Enabled: false
