@@ -17,7 +17,7 @@ module DayFour
     end
 
     def resolve
-      @passphrases.select { |row| row if row.uniq == row }.length
+      @passphrases.select { |row| row.uniq == row }.length
     end
   end
 end
